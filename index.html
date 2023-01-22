@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="mainContainer">
+        <div class="heading">
+            Score 5 points first to win the game
+        </div>
+        <div class="container">
+           <button onclick="clickedRock()" class="btn" id="rock" value="0">Rock</button>
+           <button onclick="clickedPaper()" class="btn" id="paper" value="1">Paper</button>
+           <button onclick="clickedScissor()" class="btn" id="scissor" value="2">Scissor</button>
+        </div>
+        <div class="choise">
+            <div class="choiseBox">
+                <div class="result">
+                    <p id="userChoise"></p>
+                </div>
+                <p style="color : white">User</p>
+            </div>
+            <div class="choiseBox">
+                <div class="result">
+                    <p id="compChoise"></p>
+                </div>
+                <p style="color : white">Computer</p>
+            </div>
+        </div>
+        <div class="result">
+            <p id="response">result</p>
+        </div>
+    </div>
+
+    <div class="score">
+        <div>
+            <p>Score</p>
+        </div>
+        <div class="scoreBox">
+            <div class="liveScore">
+                <p class="result" id="userLiveScore"></p>
+                <p>Your Score</p>
+            </div>
+            <div class="liveScore">
+                <p class="result" id="compLiveScore"></p>
+                <p>Computer Score</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
